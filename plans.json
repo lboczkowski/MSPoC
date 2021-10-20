@@ -1,0 +1,24 @@
+{
+    "planId": 1,
+    "planName": "This is the name of the plan",
+    "industryCode": "Retail",
+    "purposeCode": "Optimize Replenishment Policy",
+    "dataConnection": [
+        {"Workspace": "Tech Incubation"},
+        {"Model": "Making Sense POC"},
+        {"Module": "Replenishment Data"}
+      ],
+    "planConfiguration": [
+        {"product": "product.product Family"},
+        {"location": "location.country"},
+        {"segmentBy": "product.product Family"},
+        {"demandForecast":"POS Forecast"},
+        {"historicalOrderQuantity":"Store PO Amount"}
+      ],
+    "simulations": [
+        "simulation1",
+        "simulation2"
+      ],
+    "createdOn": "2021-10-20T13:49:51.141Z"
+
+}
