@@ -20,14 +20,14 @@
         "name": "periodicMinMax",
         "description": "This is the periodic min max description",
         "properties": [
-          {"name": "Total Lead Time", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
-          {"name": "Projected Available Balance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
-          {"name": "Minimum Quantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
-          {"name": "Maximum Quantity", "description": "This is the Maximum Quantity description", "nature": "measure", "required": true},
-          {"name": "Order Multiple", "description": "This is the Order Multiple description", "nature": "measure", "required": true},
-          {"name": "Item Cost", "description": "This is the Item Cost description", "nature": "measure", "required": false},
-          {"name": "Safety Stock", "description": "This is the Safety Stock description", "nature": "measure", "required": false},
-          {"name": "Demand During Lead Time", "description": "This is the Demand During Lead Time description", "nature": "measure", "required": false}
+          {"name": "totalLeadTime", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
+          {"name": "projectedAvailableBalance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
+          {"name": "minimumQuantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
+          {"name": "maximumQuantity", "description": "This is the Maximum Quantity description", "nature": "measure", "required": true},
+          {"name": "orderMultiple", "description": "This is the Order Multiple description", "nature": "measure", "required": true},
+          {"name": "itemCost", "description": "This is the Item Cost description", "nature": "measure", "required": false},
+          {"name": "safetyStock", "description": "This is the Safety Stock description", "nature": "measure", "required": false},
+          {"name": "demandDuringLeadTime", "description": "This is the Demand During Lead Time description", "nature": "measure", "required": false}
         ]
       }
     ]
