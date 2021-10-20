@@ -4,9 +4,9 @@
     "industryCode": "Retail",
     "purposeCode": "Optimize Replenishment Policy",
     "dataConnection": [
-        {"Workspace": "Tech Incubation"},
-        {"Model": "Making Sense POC"},
-        {"Module": "Replenishment Data"}
+        {"workspace": "Tech Incubation"},
+        {"model": "Making Sense POC"},
+        {"module": "Replenishment Data"}
       ],
     "planConfiguration": [
         {"product": "product.product Family"},
