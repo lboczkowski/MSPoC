@@ -1,24 +1,24 @@
 {
-    "planId": 1,
-    "planName": "This is the name of the plan",
-    "industryCode": "Retail",
-    "purposeCode": "Optimize Replenishment Policy",
-    "dataConnection": [
-        {"workspace": "Tech Incubation"},
-        {"model": "Making Sense POC"},
-        {"module": "Replenishment Data"}
-      ],
-    "planConfiguration": [
-        {"product": "product.product Family"},
-        {"location": "location.country"},
-        {"segmentBy": "product.product Family"},
-        {"demandForecast":"POS Forecast"},
-        {"historicalOrderQuantity":"Store PO Amount"}
-      ],
-    "simulations": [
-        "simulation1",
-        "simulation2"
-      ],
-    "createdOn": "2021-10-20T13:49:51.141Z"
+  "planId": 1,
+  "planName": "This is the name of the plan",
+  "industryCode": "Retail",
+  "purposeCode": "Optimize Replenishment Policy",
+  "dataConnection": {
+     "workspace": "Tech Incubation",
+     "model": "Making Sense POC",
+     "module": "Replenishment Data"
+   },
+  "planConfiguration": [
+      {"name": "product", "value": "product.product Family"},
+      {"name": "location", "value": "location.country"},
+      {"name": "segmentBy", "value": "product.product Family"},
+      {"name": "demandForecast", "value":"POS Forecast"},
+      {"name": "historicalOrderQuantity", "value":"Store PO Amount"}
+  ],
+  "simulations": [
+      {"simulationId": "00001", "simulationName": "simulation1" },
+      {"simulationId": "00002", "simulationName": "simulation2" }
+    ],
+  "createdOn": "2021-10-20T13:49:51.141Z"
 
 }
