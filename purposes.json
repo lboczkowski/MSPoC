@@ -4,11 +4,11 @@
     "purposeCode": "Optimize Replenishment Policy",
     "description": "This is the purpose description",
     "properties": [
-      {"name": "product", "description": "This is the product description", "nature": "dimensionLevel", "required": true, "source": "mapped"},
-      {"name": "location", "description": "This is the location description", "nature": "dimensionLevel", "required": true, "source": "mapped"},
-      {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "dimensionLevel", "required": true, "source": "mapped"},
-      {"name": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true, "source": "mapped"},
-      {"name": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true, "source": "mapped"}
+      {"name": "product", "description": "This is the product description", "nature": "dimensionLevel", "required": true},
+      {"name": "location", "description": "This is the location description", "nature": "dimensionLevel", "required": true},
+      {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "dimensionLevel", "required": true},
+      {"name": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true},
+      {"name": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true}
     ],
     "metrics": [
       {"name": "zeroStockDays", "description": "This is the zero stock days description"},
