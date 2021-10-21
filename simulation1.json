@@ -1,24 +1,79 @@
 {
+  "simulationsList":
+  [
+    {
       "simulationId": 1,
       "planId": 1,
       "simulationName": "simulation1",
       "segment": "Chocolate Favorite",
       "policy": "periodicMinMax",
       "properties": [
-          {"Total Lead Time":"total_lead_time", "source": "mapped"},
-          {"Projected Available Balance": "projected_balance", "source": "mapped"},
-          {"Minimum Quantity":35, "source": "constant"},
-          {"Maximum Quantity":"max_quantity", "source": "mapped"},
-          {"Order Multiple":"order_quantity", "source": "mapped"},
-          {"Item Cost":20, "source": "constant"},
-          {"Safety Stock":38, "source": "constant"},
-          {"Demand During Lead Time":"lead_time", "source": "mapped"}
+          {"name": "Total Lead Time", "value":"total_lead_time", "source": "mapped"},
+          {"name": "Projected Available Balance", "value" : "projected_balance", "source": "mapped"},
+          {"name": "Minimum Quantity", "value": "35", "source": "constant"},
+          {"name": "Maximum Quantity", "value": "max_quantity", "source": "mapped"},
+          {"name": "Order Multiple", "value": "order_quantity", "source": "mapped"},
+          {"name": "Item Cost", "value": "20", "source": "constant"},
+          {"name": "Safety Stock", "value": "38", "source": "constant"},
+          {"name": "Demand During Lead Time", "value": "lead_time", "source": "mapped"}
         ],
         "results": [
-          {"Zero stock days":2},
-          {"Lost Sales": 200},
-          {"Average Inventory Holding Cost":500}
+          {
+            "resultDate": "2021-02-02 22:22:22",
+            "metrics": [
+              {
+                "name": "zero stock days",
+                "value": "2"
+              }, {
+                "name": "lost sales",
+                "value": "200"
+              },
+              {
+                "name": "average inventory holding cost",
+                "value": "500"
+              }
+            ]
+          }
         ],
       "status":"This is the status of the simulation",
       "createdOn": "2021-10-20T13:52:00.141Z"
+    },
+    {
+      "simulationId": 2,
+      "planId": 1,
+      "simulationName": "simulation2",
+      "segment": "Fudge Favorite",
+      "policy": "periodicMinMax",
+      "properties": [
+          {"name": "Total Lead Time", "value": "total_lead_time", "source": "mapped"},
+          {"name": "Projected Available Balance", "value": "projected_balance", "source": "mapped"},
+          {"name": "Minimum Quantity", "value": "30", "source": "constant"},
+          {"name": "Maximum Quantity", "value": "max_quantity", "source": "mapped"},
+          {"name": "Order Multiple", "value": "order_quantity", "source": "mapped" },
+          {"name": "Item Cost", "value": "38", "source": "constant"},
+          {"name": "Safety Stock", "value": "100", "source": "constant"},
+          {"name": "Demand During Lead Time", "value": "lead_time", "source": "mapped"}
+        ],
+        "results": [
+          {
+            "resultDate": "2021-02-02 22:22:22",
+            "metrics": [
+              {
+                "name": "zero stock days",
+                "value": "4"
+              }, {
+                "name": "lost sales",
+                "value": "150"
+              },
+              {
+                "name": "average inventory holding cost",
+                "value": "450"
+              }
+            ]
+          }
+        ],
+      "status":"This is the status of the simulation",
+      "createdOn": "2021-10-20T15:30:00.000Z"
     }
+  ]
+}
