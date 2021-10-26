@@ -6,7 +6,7 @@
     "properties": [
       {"name": "product", "description": "This is the product description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
       {"name": "location", "description": "This is the location description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
-      {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
+      {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "nonTimeDimensionLevel", "required": true, "constraint": "mapped"},        
       {"name": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true, "constraint": "mapped"},
       {"name": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true, "constraint": "mapped"}
     ],
