@@ -21,6 +21,7 @@
         "name": "periodicMinMax",
         "description": "This is the periodic min max description",
         "properties": [
+          {"name": "Lead Time", "description": "This is the Lead Time description", "nature": "measure", "required": true},
           {"name": "Total Lead Time", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
           {"name": "Projected Available Balance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
           {"name": "Minimum Quantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
