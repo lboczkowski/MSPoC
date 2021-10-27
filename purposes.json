@@ -9,6 +9,7 @@
       {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "nonTemporalDimensionLevel", "required": true, "constraint": "mapped"},        
       {"name": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true, "constraint": "mapped"},
       {"name": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true, "constraint": "mapped"}
+      {"name": "openingBalance", "description": "This is the opening balance description", "nature": "measure", "required": true, "constraint": "mapped"}
     ],
     "metrics": [
       {"name": "zeroStockDays", "description": "This is the zero stock days description"},
@@ -20,6 +21,7 @@
         "name": "periodicMinMax",
         "description": "This is the periodic min max description",
         "properties": [
+          {"name": "Lead Time", "description": "This is the Lead Time description", "nature": "measure", "required": true},
           {"name": "Total Lead Time", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
           {"name": "Projected Available Balance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
           {"name": "Minimum Quantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
