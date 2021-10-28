@@ -1,35 +1,37 @@
 {
     "purposeId": 1,
-    "industryCode": "Retail",
-    "purposeCode": "Optimize Replenishment Policy",
+    "name": "Optimize Replenishment Policy",
+    "code": "replenishment"
+    "industryCode": "retail",
     "description": "This is the purpose description",
     "properties": [
-      {"name": "product", "description": "This is the product description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
-      {"name": "location", "description": "This is the location description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
-      {"name": "segmentBy", "description": "This is the segmentBy description", "nature": "nonTemporalDimensionLevel", "required": true, "constraint": "mapped"},        
-      {"name": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true, "constraint": "mapped"},
-      {"name": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true, "constraint": "mapped"}
-      {"name": "openingBalance", "description": "This is the opening balance description", "nature": "measure", "required": true, "constraint": "mapped"}
+      {"name": "product", "code": "product", "description": "This is the product description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
+      {"name": "location", "code": "location", "description": "This is the location description", "nature": "dimensionLevel", "required": true, "constraint": "mapped"},
+      {"name": "segmentBy", "code": "segmentBy", "description": "This is the segmentBy description", "nature": "nonTemporalDimensionLevel", "required": true, "constraint": "mapped"},        
+      {"name": "demandForecast", "code": "demandForecast", "description": "This is the demand forecast description", "nature": "measure", "required": true, "constraint": "mapped"},
+      {"name": "historicalOrderQuantity", "code": "historicalOrderQuantity", "description": "This is the historical order quantity description", "nature": "measure", "required": true, "constraint": "mapped"}
+      {"name": "openingBalance", "code": "openingBalance", "description": "This is the opening balance description", "nature": "measure", "required": true, "constraint": "mapped"}
     ],
     "metrics": [
-      {"name": "zeroStockDays", "description": "This is the zero stock days description"},
-      {"name": "lostSales", "description": "This is the lost sales description"},
-      {"name": "averageInventoryHoldingCost", "description": "This is the average inventory holding cost description"}
+      {"name": "zeroStockDays", "code": "zeroStockDays", "description": "This is the zero stock days description"},
+      {"name": "lostSales", "code": "lostSales", "description": "This is the lost sales description"},
+      {"name": "averageInventoryHoldingCost", "code": "averageInventoryHoldingCost", "description": "This is the average inventory holding cost description"}
     ],
     "policies": [
       {
-        "name": "periodicMinMax",
+        "name": "PeriodicMinMax",
+        "code": "periodicMinMax", 
         "description": "This is the periodic min max description",
         "properties": [
-          {"name": "Lead Time", "description": "This is the Lead Time description", "nature": "measure", "required": true},
-          {"name": "Total Lead Time", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
-          {"name": "Projected Available Balance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
-          {"name": "Minimum Quantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
-          {"name": "Maximum Quantity", "description": "This is the Maximum Quantity description", "nature": "measure", "required": true},
-          {"name": "Order Multiple", "description": "This is the Order Multiple description", "nature": "measure", "required": true},
+          {"name": "Lead Time", "code": "leadTime", "description": "This is the Lead Time description", "nature": "measure", "required": true},
+          {"name": "Total Lead Time", "code": "totalLeadTime", "description": "This is the Total Lead Time description", "nature": "measure", "required": true},
+          {"name": "Projected Available Balance", "code": "projectedAvailableBalance", "description": "This is the Projected Available Balance description", "nature": "measure", "required": true},
+          {"name": "Minimum Quantity", "code": "minQuantity", "description": "This is the Minimum Quantity description", "nature": "measure", "required": true},
+          {"name": "Maximum Quantity", "code": "maxQuantity", "description": "This is the Maximum Quantity description", "nature": "measure", "required": true},
+          {"name": "Order Multiple", "code": "orderMultiple", "description": "This is the Order Multiple description", "nature": "measure", "required": true},
           {"name": "Item Cost", "description": "This is the Item Cost description", "nature": "measure", "required": false},
-          {"name": "Safety Stock", "description": "This is the Safety Stock description", "nature": "measure", "required": false},
-          {"name": "Demand During Lead Time", "description": "This is the Demand During Lead Time description", "nature": "measure", "required": false}
+          {"name": "Safety Stock", "code": "itemCost", "description": "This is the Safety Stock description", "nature": "measure", "required": false},
+          {"name": "Demand During Lead Time", "code": "safetyStock", "description": "This is the Demand During Lead Time description", "nature": "measure", "required": false}
         ]
       }
     ]
